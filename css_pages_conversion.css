@@ -1,0 +1,69 @@
+body {
+  background: url("nathan.jpg") center center / cover no-repeat fixed;
+position:relative
+}
+
+
+
+
+.redirection{
+position:absolute;
+text-align:center;
+margin-top:15%;
+}
+
+
+
+
+
+
+
+
+.zone {
+ position: absolute;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.interro{
+position:absolute;
+left:45.5%;
+top:175%;
+width:150px;
+}
+
+
+
+
+
+
+.cal {
+position:absolute;
+left:80%;
+top:25%;
+width:300px;
+}
+
+
+
+
+.tout_en_haut {
+position:absolute;
+left:8%;
+top:5%;
+width:220px;
+}
+
+
+
+.nv {
+position:absolute;
+left:8%;
+top:5%;
+width:150px;
+}
