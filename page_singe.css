@@ -1,0 +1,29 @@
+h1 {
+position:absolute;
+text-align:center;
+margin-top:21.5%;
+}
+
+
+body {
+ background: url("nathan.jpg") center center / cover no-repeat fixed;
+ position:relative;
+}
+
+
+.singe {
+position:absolute;
+left:15%;
+margin-top:3%;
+width:300px;
+}
+
+
+
+
+.sarko {
+position:absolute;
+left:65%;
+margin-top:40%;
+width:300px;
+}

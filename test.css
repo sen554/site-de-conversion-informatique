@@ -1,0 +1,383 @@
+.intro {
+ 
+  margin-left: 1%;
+  margin-top: 23%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* attributs du texte*/
+
+html, body {
+  
+   margin: 0;
+  height: 100%;
+  overflow: hidden;
+  
+}
+/* avec overflow hidden on dit que tout se qui dépasse de la page est enlevée, et on dit que le body recouvre toute la page*/
+
+p, ul
+{
+	color : black;
+	text-align:left;
+	
+	}
+p
+{
+	line-height:150%
+	}
+
+li
+{
+	line-height:150%
+	}
+	
+h1
+{
+	position:absolute;
+	color : black;
+	text-align : center;
+	top:10%;
+	left:50%;
+	transform:translate(-50%);
+	color:green;
+}
+	
+	/* attributs du sous-titre 1 avec transform translate qui permet que le texte soit exactement au milieu de la page*/
+h2
+{	
+	font-style : italic;
+	position:absolute;
+	color : black;
+	text-align : center;
+	top:20%;
+	left:50%;
+	transform:translate(-50%);
+		color:green;
+}
+/* même chose que au-dessus sauf qu'on rajoute le style italique*/
+
+strong
+{
+	color : blue;
+	
+	}
+
+
+
+
+
+.marge {
+margin-left: 5em;
+}
+
+#menu, #menu ul /* Liste */     
+{  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+        padding : 0; /* pas de marge intérieure */
+        margin : 0; /* ni extérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+/* on dit ici que le menu doit faire toute la largeur*/
+#menu /* Ensemble du menu */
+{
+          position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #1c450a;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    z-index: 1000;
+        
+}
+/* sa position est fixée par rapport à la fenêtre du navigateur et ne bouge pas quand on scroll avec la souris, une couleur du background est aussi spécifiée sous son nom html et le z index de 1000 fait que le menu passe au-dessus de tout le reste : ce sera toujours le menu qui s'activera */
+#menu a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        padding : 0; /* aucune marge intérieure */
+        background : #1c450a; /* couleur de fond */        
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+        width : 1823px; /* largeur */
+         height: 40px;
+  line-height: 40px;
+         
+      
+}
+
+#menu li /* Elements des listes */      
+{ 
+         position: relative;
+        float : left; 
+        /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+          
+         
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+
+#menu li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 288px; /* Largeur des sous-listes */
+        display:none;
+        top: 40px;
+        left:0;
+      
+}
+
+
+#menu li ul li /* Éléments de sous-listes */
+{
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+#menu li ul ul 
+{
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */   
+        
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+html>body #menu li ul ul                
+{
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+}
+
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+
+#menu li:hover > ul
+{
+display:block;
+    left: 0;
+}
+/* régit le comportement du hover, donc de ce qui active le menu déroulant*/
+
+
+   
+
+
+
+
+
+body {
+  background: url("samuel.jpg") center center / cover no-repeat fixed;/*center center : position horizontale et verticale; cover : image remplit tt l'écran, garde ses proportions, peut être coupée sur les bords; no repeat : empêche que l'image se répète en mosaîque ; fixed : empêche que nla page scroll et que du contenu glisse sur d'autres trucs*/
+  position:relative;
+}
+
+
+
+.page {
+   position: relative;
+ 
+   height: 100vh;   /* plein écran */
+}
+
+
+
+.photo {
+  width: 100%;
+  height: 100vh;
+    object-fit: cover;   
+}
+/* Remplit tout l’espace disponible sans déformer l’image, quitte à en couper une partie */
+
+
+/* Zones cliquables */
+.zone {
+ position: absolute;
+  z-index: 2;
+}
+/* z index 2 permet que les zones cliquables le soient par rapport à du background de z index 0*/
+
+
+
+/*  zone 1 oeil gauche */
+.zone1 {
+  top: 42%;
+  left: 48%;
+  width: 3%;
+  height: 4%;
+}
+
+
+
+
+/* zone 2 oeil droit */
+.zone2 {
+  top: 42%;
+  left: 60.5%;
+  width: 3%;
+  height: 4%;
+}
+
+
+
+
+/* zone 3 nez */
+.zone3 {
+  top: 50%;
+  left: 52.5%;
+  width: 6%;
+  height: 7%;
+}
+
+
+
+
+.image_de {
+  position: absolute;
+  top: 17%;  
+  left: 6.5%; 
+  width : 200px;
+  z-index: 2000;
+}
+/* gros z index pour surpasser celui du menu car le menu avait une aire d'effet énorme*/
+
+
+
+.image_des {
+
+  position: absolute;
+  top: 50%;  
+  left: 72%; 
+  width : 200px;
+}
+
+
+
+
+
+.image_dess {
+
+  position: absolute;
+  top: 84%;  
+  left: 48%; 
+  width : 200px;
+}
+
+
+
+
+
+
+.noir {
+   position: absolute;
+  margin-top: -5%;
+  margin-left: 1%;
+   width: 150px;
+}
+
+
+
+
+
+.son {
+position:absolute;
+top:94%;
+left:45.5%;
+}
+
+
+
+
+.texte1 {
+text-align:center;
+margin-top:13%;
+position:absolute;
+
+}
+
+
+
+.rouge{
+color:red;
+}
+.blanc{
+color:green;
+}
+
+
+
+
+
+
+
+
+
+H3 {
+	position:absolute;
+	color : black;
+	text-align : center;
+	top:30%;
+	left:50%;
+	transform:translate(-50%);
+		color:green;
+}
+
+
+
+
+.ind {
+position:absolute;
+left:84.5%;
+top:15%;
+width:100px;
+}
+
+.texte_ind {
+margin-left:79%;
+margin-top:-12%;
+text-align:center;
+font-size:12px;
+color:blue;
+position:absolute;
+}
+
+
+.jaune {
+color:yellow;
+}
+
+
+.texte1 {
+position:absolute;
+text-align:center;
+margin-left:1%;
+margin-top:15%;
+}
+
+
+
+
+.texte2 {
+position:absolute;
+text-align:center;
+margin-left:42%;
+margin-top:15%;
+}
+
+
+
+
