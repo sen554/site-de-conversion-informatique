@@ -139,3 +139,12 @@ margin-top:0%;
   border: 2px solid black; /* contour de la bulle*/
   font-weight: bold;
 }
+
+
+
+
+.accueil {
+position:absolute;
+  left:70%;
+  top:40%;
+}
