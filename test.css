@@ -212,29 +212,6 @@ body {
 /* z index 2 permet que les zones cliquables le soient par rapport à du background de z index 0*/
 
 
-
-/*  zone 1 oeil gauche */
-.zone1 {
-  top: 42%;
-  left: 48%;
-  width: 3%;
-  height: 4%;
-}
-
-
-
-
-/* zone 2 oeil droit */
-.zone2 {
-  top: 42%;
-  left: 60.5%;
-  width: 3%;
-  height: 4%;
-}
-
-
-
-
 /* zone 3 nez */
 .zone3 {
   top: 50%;
