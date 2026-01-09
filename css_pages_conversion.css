@@ -144,9 +144,9 @@ margin-top:0%;
 
 
 .accueil {
-position:absolute;
-left:60px;
-top:40px;
+
+left:60%;
+top:40%;
   z-index: 9999;
   color: white;
   background: rgba(0,0,0,0.5);
