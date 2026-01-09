@@ -147,5 +147,8 @@ margin-top:0%;
 position:absolute;
 left:20%;
 top:20%;
-  z-index:20;
+  z-index: 9999;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
 }
