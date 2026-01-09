@@ -147,4 +147,5 @@ margin-top:0%;
 position:absolute;
 left:20%;
 top:20%;
+  z-index:20;
 }
