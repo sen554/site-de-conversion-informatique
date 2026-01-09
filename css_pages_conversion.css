@@ -88,7 +88,7 @@ font-size:25px;
 
 .emplacement {
 position:absolute;
-left:13.5%;
+left:14.5%;
 margin-top:25%;
  display: inline-block; /* ne prend que la largeur du texte*/
   padding: 15px 15px; /* espace entre les cases de conversion et le bord de la bulle*/
