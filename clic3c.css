@@ -1,0 +1,35 @@
+body {
+  background: url("ordi.jpg") center center / cover no-repeat fixed;
+  color:black;
+  position:relative;
+}
+
+h1 {
+position:absolute;
+margin-top:0%;
+font-size:25px;
+text-align:center;
+}
+
+
+/* définit une bulle autour de mon texte*/
+h1.bulle {
+  display: inline-block; /* ne prend que la largeur du texte*/
+  padding: 15px 20px; /* espace entre le texte et le bord de la bulle*/
+  background: brown;
+  border-radius: 20px; /* arrondit les coins */
+  border: 2px solid black; /* contour de la bulle*/
+}
+
+
+
+ .accueil {
+position:absolute;
+left:85%;
+margin-top:50%;
+  background-color:red;
+  padding: 5px;
+    border: 3px solid red;
+    color:white;
+      font-size: 15px;
+}
