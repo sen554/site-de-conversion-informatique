@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"></meta>
+	<link href="chant.css" rel="stylesheet"></link>
+	
+	<title>chanson de Noël</title>
+	
+</head>
+<body>
+
+<img id="mariahFixe" src="mariah_caca_immobile.jpg" class="immo">
+<img id="mariahGif" src="mariah_caca.gif" class="immo">
+
+<audio id="musique" controls src="samuel.m4a" class="son" ></audio>
+
+
+<img src="noel_cadeaux.jpg" class="cadeaux">
+<img src="papa_noel.webp" class="papa">
+<img src="samuel_pere_noel.png" class="papa_sam">
+<!-- on met l'image fixe de mariah carey et le gif mobile,on met le fichier audio et les images décoratives -->
+
+<p class="texte">
+
+La petite surprise de Noël comme prévu : la </br>traditionnelle musique de Noël reprise par</br> Samuel en personne ! Ecoutez cette voix </br>envoutante, ces harmoniques d'anges et</br> son assurance légendaire ! Vous n'avez qu'à </br>cliquer sur lecture pour assister en même temps </br>aux talents artistiques de notre chère Mariah Carey.
+
+</p>
+
+<h1>
+Noël !
+</h1>
+
+<script>
+const audio = document.getElementById("musique");
+const fixe = document.getElementById("mariahFixe");
+const gif = document.getElementById("mariahGif");
+
+gif.style.display = "none";
+
+audio.addEventListener("play", () => {
+  fixe.style.display = "none";
+  gif.style.display = "block";
+});
+
+audio.addEventListener("pause", () => {
+  gif.style.display = "none";
+  fixe.style.display = "block";
+});
+
+audio.addEventListener("ended", () => {
+  gif.style.display = "none";
+  fixe.style.display = "block";
+});
+</script>
+
+
+<!--  partie JS qui permet que le gif ne soit pas visible quand la touche lecture n'est pas pressée, affiche le gif et n'affiche pas l'image fixe quand play est lancé  -->
+ <div class="fleche"></div>
+ <!-- introduction de la flèche créée dans le css -->
+ <p class="explications">
+ c'est une image créée sur Gimp par les créateurs du site, </br>elle est libre de droit :)
+ </p>
+ 	<p class="accueil">
+
+vous voulez retourner à l'accueil ? cliquez 
+
+	<a href="index.html" >ici</a>
+</p>
+
+</body>
+</html>
