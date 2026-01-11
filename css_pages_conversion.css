@@ -1,0 +1,167 @@
+body {
+  background: url("nathan.jpg") center center / cover no-repeat fixed;
+position:relative;
+}
+
+/* comme le css de test*/
+
+
+.redirection{
+position:absolute;
+text-align:center;
+margin-top:40%;
+color:white;
+}
+
+/* couleur blanche du texte*/
+
+
+
+
+
+
+.zone {
+ position: absolute;
+  z-index: 2;
+}
+/* z index pour que ce soit cliquable*/
+
+
+
+
+
+
+.interro{
+position:absolute;
+left:42%;
+margin-top:40%;
+width:150px;
+}
+
+
+
+
+
+
+.cal {
+position:absolute;
+left:80%;
+top:25%;
+width:300px;
+}
+
+
+
+
+.tout_en_haut {
+position:absolute;
+left:8%;
+top:5%;
+width:220px;
+}
+
+
+
+.nv {
+position:absolute;
+left:8%;
+top:5%;
+width:150px;
+}
+
+
+.sens_un {
+position:absolute;
+margin-top:12%;
+font-size:25px;
+}
+/* font size pour modifier la taille de police d'écriture*/
+
+
+
+.sens_deux {
+position:absolute;
+margin-top:30%;
+font-size:25px;
+}
+
+
+.emplacement {
+position:absolute;
+left:13.5%;
+margin-top:20%;
+ display: inline-block; /* ne prend que la largeur du texte*/
+  padding: 15px 15px; /* espace entre les cases de conversion et le bord de la bulle*/
+  background: brown;
+  border-radius: 20px; /* arrondit les coins */
+  border: 2px solid black; /* contour de la bulle*/
+  font-weight: bold;
+}
+
+
+.emplacement div {
+margin-bottom:20px;
+}
+
+
+.emplacement label {
+  display: inline-block;
+  width: 130px;
+}
+
+
+.tex_conv {
+position:absolute;
+left:8%;
+margin-top:15%;  
+text-align:center;
+display: inline-block; /* ne prend que la largeur du texte*/
+  padding: 5px 5px; /* espace entre les cases de conversion et le bord de la bulle*/
+  background: yellow;
+  border-radius: 20px; /* arrondit les coins */
+  border: 2px solid black; /* contour de la bulle*/
+  font-weight: bold;
+  color:red;
+}
+
+h1 {
+position:absolute;
+color:yellow;
+left:50%;
+margin-top:0%;
+  transform: translate(-50%);
+  font-weight: bold;
+    text-decoration: underline;
+    display: inline-block; /* ne prend que la largeur du texte*/
+  padding: 5px 5px; /* espace entre les cases de conversion et le bord de la bulle*/
+  background: red;
+  border-radius: 20px; /* arrondit les coins */
+  border: 2px solid black; /* contour de la bulle*/
+  font-weight: bold;
+}
+
+
+
+
+
+.accueil {
+position:absolute;
+left:65%;
+margin-top:23%;
+  background-color:red;
+  padding: 10px;
+    border: 3px solid red;
+}
+
+
+.fr {
+position:absolute;
+margin-top:50%;
+left:10%;
+text-align:center;
+font-size:15px;
+color:red;
+  background-color:black;
+  padding: 10px;
+    border: 3px solid red;
+}
